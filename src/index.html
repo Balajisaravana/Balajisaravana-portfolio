@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="px-20 py-2">
+            <nav class="flex fixed items-center w-full" style="gap: 60%; ">
+                <h1 class="font-sixty font-normal text-5xl  text-slate-100">BS</h1>
+                <ul class="flex link-ul">
+                    <li class="m-1 px-5 "><a href="#" class="link"> Work</a></li>
+                    <li class="m-1 px-5 "><a href="#" class="link">Skill </a> </li>
+                    <li class="m-1 px-5 "><a href="#" class="link"> Experience</a> </li>
+                    <li class="m-1 px-5"><a href="#" class="link">Contact </a> </li>
+                    <span class="material-icons-round">
+                        close
+                        </span>
+                </ul>
+                <div>
+                    <span class="material-icons-round text-white">
+                        menu
+                        </span>
+                </div>
+                
+            </nav>
+            <div class="font-poppins  font-black flex py-8 mt-32 w-full items-center  max-[600px]:flex-col ">
+                
+                <div class="basis-1/2">
+                    <p class="text-4xl font-medium ">Software Engineer</p>
+                    <h1 class="text-6xl font-bold">Hi , I'm <span class="p-5 highlight"> Balaji Saravanan</span> <br> Front-End Developer </h1>
+                </div>
+                <div class="basis-1/2 flex justify-evenly">
+                    <img src="../backgroundimg.png" style="width: 40%; background: radial-gradient(#301E67, transparent); border-radius: 100%;">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- // About ME -->
+    <div class="px-20 " style="margin-top: 5%; margin-bottom: 5%;">
+        <div class="flex justify-start items-start  max-[600px]:flex-col">
+            <div class="basis-2/6 "><img src="../backgroundimg5.png.jpg" class="w-5/6 rounded-lg opacity-90" >  </div>
+            <div  class="basis-4/6 font-poppins"> 
+                <h1 class="text-5xl font-bold highlight-lower"> ABOUT ME</h1>
+                <p class="text-justify leading-7 w-5/6 my-3 font-light text-lg" >Hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate temporibus, cupiditate dolores rerum consequatur nostrum neque obcaecati velit quia error minus harum id nisi laudantium sed est, ab praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, a dignissimos magnam unde illum consectetur maxime alias dolor consequuntur reprehenderit, maiores corrupti voluptas. Blanditiis, magni corrupti vitae atque non maxime! </p>
+                <div class="flex my-3 text-2xl font-normal  items-center">
+                    <p class="mr-8 cursor-pointer relative about-link active" onclick="handleChange('skill')">Skill</p>
+                    <p class="mr-8 cursor-pointer about-link relative" onclick="handleChange('Education')">Education</p>
+                    <p class="mr-8 cursor-pointer about-link relative" onclick="handleChange('Experience')">Experience</p> 
+                </div>
+                <div class="flex absolute tab-content active" id="skill">
+                    <ul class="list-none">
+                        <li class="mt-2 font-light "><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                        <li class="mt-2  font-light " ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
+                        <li class="mt-2  font-light "><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                    </ul>
+                </div>
+                <div class="flex absolute tab-content" id="Experience">
+                    <ul class="list-none">
+                        <li class="mt-2 font-light "><span class="font-extrabold"> Us/UX</span><br> Design Web interface and app interface</li>
+                        <li class="mt-2 font-light" ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
+                        <li class="mt-2 font-light"><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                    </ul>
+                </div>
+                <div class="flex absolute tab-content" id="Education">
+                    <ul class="list-none">
+                        <li class="mt-2 font-light"><span class="font-extrabold"> Uz/UX</span><br> Design Web interface and app interface</li>
+                        <li class="mt-2 font-light" ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
+                        <li class="mt-2 font-light"><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ///Work -->
+    <div class="px-20" style="margin-top: 5%; margin-bottom: 5%;">
+        <div class="mb-16"><h1 class="text-5xl font-bold highlight-lower">My Work</h1></div>
+
+
+            <div class="slider">
+                <input type="radio" name="testimonial" id="t-1" >
+                <input type="radio" name="testimonial" id="t-2" checked>
+                <input type="radio" name="testimonial" id="t-3" >
+                <div class="inner-slider">
+                <div class="mt-5 w-1/3 p-10 " for="t-1">
+                    <div class="outer-highlight ">
+             
+                          <img src="../restorant.jpg" class="w-full ">
+                        <div class="inner-highlight">
+                            <span class="text-2xl font-extrabold mb-3"> Mondelez</span>
+                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
+                            <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200 " style="color: 5B8FB9; background-color: transparent;">
+                                arrow_outward
+                                </span></a> 
+                        </div>
+                       
+                      </div>
+                </div>
+                <div class="mt-5 w-1/3 p-10" for="t-2">
+                    <div class="outer-highlight ">
+             
+                          <img src="../depositphotos_60600635-stock-photo-closeup-of-a-muscular-young.jpg" class="w-full ">
+                        <div class="inner-highlight">
+                            <span class="text-2xl font-extrabold mb-3"> Astra</span>
+                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
+                           <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
+                            arrow_outward
+                            </span></a> 
+                        </div>
+                       
+                      </div>
+                </div>
+                <div class="mt-5 w-1/3 p-10 " for="t-3">
+                    <div class=" outer-highlight ">
+             
+                          <img src="../AI-terms-scaled.jpg" class="w-full ">
+                        <div class="inner-highlight">
+                            <span class="text-2xl font-extrabold mb-3"> AI</span>
+                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
+                            <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
+                                arrow_outward
+                                </span></a> 
+                        </div>
+                       
+                      </div>
+                </div>
+
+                </div>
+                <div class="dots">
+                    <label for="t-1"></label>
+                    <label for="t-2"></label>
+                    <label for="t-3"></label>
+                </div>
+            </div>
+    </div>
+    <!-- // Experience -->
+    <div class="px-20" style="margin-top: 5%; margin-bottom: 5%;">
+        <div class=" flex max-[600px]:flex-col ">
+            <div class="font-poppins mb-16">
+                <h1 class="text-5xl font-bold highlight-lower"> Experience</h1>
+            </div>
+            <div class="grid-card">
+                <div class="flex flex-col gap-3">
+                    <span class="text-3xl font-extrabold"> Mondelez</span>
+                    <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
+                    <span class="text-2xl font-normal my-1" >Technology</span>
+                    <p>React</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="text-3xl font-extrabold"> Mondelez</span>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
+                    <span class="text-2xl font-normal my-1">Technology</span>
+                    <p>React</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="text-3xl font-extrabold"> Mondelez</span>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
+                    <span class="text-2xl font-normal my-1">Technology</span>
+                    <p>React</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- /// Contact ME  -->
+    <div class="px-20 " style="margin-top: 5%;">
+        <div class="mb-16" ><h1 class="text-5xl font-bold highlight-lower">Contact With Me</h1></div>
+        <div class="grid grid-cols-2 gap-5 p-5  items-center justify-items-start ">
+            <div class="contact m-3 p-8 flex flex-col items-center  rounded-3xl min-h-96 gap-8 justify-self-end" style="background-color: #301e6742;"> 
+                <h2 class="text-3xl font-extrabold mb-3 text-center">Contact Information</h2>
+               <div class=" flex flex-col gap-8">
+                <div class="flex items-center gap-12">
+                    <span class="material-icons-round border-2 rounded-full p-2" style="color: #5B8FB9; border-color: #5B8FB9;">
+                        drafts
+                        </span>
+                        <div class="border-l-2 px-2">
+                            <h3 class="text-xl font-extrabold  ">Email</h3>
+                            <p>balajibalab1@gmail.com</p>
+                        </div>
+                </div>
+                <div class="flex  items-center gap-12">
+                    <span class="material-icons-round border-2 rounded-full p-2" style="color: #5B8FB9; border-color: #5B8FB9;">
+                        call
+                        </span>
+                        <div class="border-l-2 px-2">
+                            <h3 class="text-xl font-extrabold ">Phone </h3>
+                            <p>7010900952</p>
+                        </div>
+                </div>
+                <div class="flex items-end w-3/4 py-2 px-5 border-2 rounded-3xl gap-2 change " style=" background-color: #5B8FB9; color: #b6eada9e; border-color: #5B8FB9;">
+                    <a href="" class="text-xl font-extrabold "> Download CV </a>
+                    <span class="material-icons-round cursor-pointer change" style="color: #b6eada9e;" >
+                        file_download
+                        </span>
+                </div>
+                <div class="mb-1">
+                    <h3 class="text-2xl font-extrabold mb-3 ">Social Profiles</h3>
+                    <div class="flex gap-8 cursor-pointer">
+                        <img src="../317750_linkedin_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="../3225183_app_logo_media_popular_social_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="../1298743_github_git_logo_social_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="../facebook.png" style="color: aliceblue;" width="20px"> 
+                        <img src="../instagram.png" style="color: aliceblue;" width="20px">
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="contact m-3 p-8  rounded-3xl min-h-96" style="background-color: #301e6742;">
+                <h2 class="text-3xl font-extrabold mb-3 text-center "> Send Me Message</h2>
+                <div class="" >
+                    <form class="flex flex-col gap-5 px-5 items-center gap-5 mt-5 ">
+                        <input name="name" type="text" placeholder="Your Name" required style="width: 80%; border-radius: 5px; padding: 6px; background-color: #5b8fb95e;" >
+                        <input name="email" type="email" placeholder="Your Email" required style="width: 80%; border-radius: 5px; padding: 6px;background-color: #5b8fb95e;">
+                        <input name="Phone" type="text" placeholder="Your Mobile Number" required style="width: 80%; border-radius: 5px; padding: 6px;background-color: #5b8fb95e;">
+                        <textarea name="message" rows="4" placeholder="Your Message"style="width: 80%;border-radius: 5px; padding: 6px; background-color: #5b8fb95e;"></textarea>
+                        <button type="submit" class="border-2 rounded-3xl gap-5 p-2 change" style="background-color: #5B8FB9 ;font-weight: 600; border-color: #5B8FB9;color: #b6eada9e; ">Send Message</button>
+                    </form>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" text-sm w-full border-t-2 border-gray-400  font-normal mt-3 text-center"> <h3>Copyright @ Balaji </h3></div>
+</body>
+<script>
+
+    var list = document.getElementsByClassName('about-link')
+    var content = document.getElementsByClassName('tab-content')
+    console.log(list,content,"check")
+     function handleChange(e){
+        for(let tablink of list ){
+            tablink.classList.remove('active')
+        }
+        for(let tabcontent of content){
+            tabcontent.classList.remove('active')
+        }
+        event.currentTarget.classList.add('active')
+        document.getElementById(e).classList.add('active')
+     }
+</script>
+</html>
