@@ -23,9 +23,21 @@ body{
     
 }
 
+html {
+  scroll-behavior: smooth;
+}
+  nav{
+    z-index: 20;
+  }
   .link {
     position: relative;
     transition: font-weight 0.5s;
+    background: -webkit-linear-gradient(91deg, #b6eada, #5B8FB9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: larger;
+    margin-right: 50%;
   }
   .link:hover::after {
     width: 10px;
@@ -84,7 +96,7 @@ body{
   }
   .grid-card div {
     background: #535252;
-    padding: 40px;
+    padding: 18px;
     border-radius: 1%;
     min-height: 270px;
     transition: background-color 0.5s, transform 0.5s;
@@ -228,10 +240,163 @@ min-height: 400px;
   border-color: #301E67 !important;
   color: #B6EADA !important;
  }
- @media only screen and (max-width : 600px) {
-  .link-ul {
+ #nav-icon1,#nav-icon2{
+  display: none;
+ }
+ .grid-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+ }
+ #msg{
+  display: block;
+  margin-top: -10px;
+  color: #B6EADA;
+
+ }
+ @media only screen and (max-width : 800px) {
+ 
+  .grid-card{
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  }
+  .grid-content{
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr)) ; 
+    grid-template-columns: none;
+    justify-content: center;
+   }
+ }
+
+ @media screen and (max-width : 900px) {
+  .link {
+    display: none;
+  }
+  #nav-icon2{
+    display: block;
+    position: fixed;
+    right: 25px;
+    z-index: 1;
+    cursor: pointer;
+   
+  }
+  .link-ul{
+    position: fixed;
+    display: block;
+    height: 100vh;
+    background: linear-gradient(97deg, #301e67, #07001c);
+    top: 0px;
+    right: -250px ;
+    width: 250px !important;
+    z-index: 3;
+    transition: right 0.5s;
+
+  }
+  .link{
+    display: block;
+    margin-top: 20px;
+    transition: none;
+    /* margin-left: 10px; */
+  }
+  #nav-icon1{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 4;
+    cursor: pointer;
+  }  
+  .front-pic{
+    display: flex;
+    flex-direction: column;
+  }   
+  .about-me{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header{
+    margin-bottom: 5%;
+  }
+
+  .link-ul{
+    right: -250px;
+  }
+
+  .grid-content{
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: none;
+    justify-content: center;
+   }
+ }
+
+/* //1150px */
+ @media  (max-width : 1150px){
+
+  .link:hover::after {
+    width: 0px;
+  }
+
+  .grid-content{
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: none;
+    justify-content: center;
+   }
+   .about-me{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #t-2:checked ~ .inner-slider div[for="t-3"]{
+    transform: translate3d(800px, 20px, -800px) rotateY(25deg);
+    z-index: 2;
+    display: none;
+  }
+  #t-1:checked ~ .inner-slider div[for="t-2"]{
+    transform: translate3d(650px, 20px, -800px) rotateY(25deg);
+    z-index: 2;
+    display: none;
+  }
+  #t-3:checked ~ .inner-slider div[for="t-1"]{
+    transform: translate3d(800px, 20px, -800px) rotateY(25deg);
+    z-index: 2;
     display: none;
   }
   
-  
+  #t-2:checked ~ .inner-slider div[for="t-1"],
+  #t-3:checked ~ .inner-slider div[for="t-2"],
+  #t-1:checked ~ .inner-slider div[for="t-3"]
+  {
+    transform: translate3d(-700px, 20px, -800px) rotateY(325deg);
+    z-index: 3;
+    display: none;
+  }
+  #t-1:checked ~ .inner-slider div[for="t-1"] .outer-highlight:hover .inner-highlight{
+    height: 100%;
+    z-index: 4;
+
+  }
+  #t-2:checked ~ .inner-slider div[for="t-2"] .outer-highlight:hover .inner-highlight{
+    height: 100%;
+    z-index: 4;
+
+  }
+  #t-3:checked ~ .inner-slider div[for="t-3"] .outer-highlight:hover .inner-highlight{
+    height: 100%;
+    z-index: 4;
+
+  }
+  .work-card{
+    width: 80%;
+    left: 20%;
+  }
+
+ }
+
+/* //1500px */
+ @media (max-width : 1500px) {
+
+  .contact {
+    width: 460px;
+    height: 460px;
+   }
+   .link-ul{
+    margin-right: auto;
+   }
  }
