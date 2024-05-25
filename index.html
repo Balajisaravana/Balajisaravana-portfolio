@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- <link rel="stylesheet" href="index.css"> -->
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
@@ -47,7 +47,7 @@
                     <h1 class="text-6xl font-bold">Hi , I'm <span class="p-5 highlight"> Balaji Saravanan</span> <br> Front-End Developer </h1>
                 </div>
                 <div class="basis-1/2 flex justify-evenly max-[900px]:mt-8">
-                    <img src="./img/backgroundimg.png" style="width: 40%; background: radial-gradient(#301E67, transparent); border-radius: 100%;">
+                    <img src="./src/img/backgroundimg.png" style="width: 40%; background: radial-gradient(#301E67, transparent); border-radius: 100%;">
                 </div>
             </div>
            
@@ -56,7 +56,7 @@
     <!-- // About ME -->
     <div class="sub-header" style="margin-top: 5%; margin-bottom: 5%;" id="aboutme">
         <div class="flex justify-start items-start about-me">
-            <div class="basis-2/6 profile-img "><img src="./img/backgroundimg5.png.jpg" class="w-5/6 rounded-lg opacity-90 max-[1150px]:w-[56%] " >  </div>
+            <div class="basis-2/6 profile-img "><img src="./src/img/backgroundimg5.png.jpg" class="w-5/6 rounded-lg opacity-90 max-[1150px]:w-[56%] " >  </div>
             <div  class="basis-4/6 font-poppins text-section"> 
                 <h1 class="text-5xl font-bold highlight-lower"> ABOUT ME</h1>
                 <p class="text-justify leading-7 w-5/6 my-3 font-light text-lg max-[1400px]:text-base" >Hello! I'm a Software Developer who loves creating user-friendly designs and intuitive interfaces. I work on various software projects, constantly seeking to improve my skills and understanding. I'm particularly focused on learning backend development and system architecture. I enjoy delving into the intricacies of server-side programming, databases, and the principles of scalable and efficient system design. My learning approach involves hands-on experimentation, building real-world projects, and continuously studying best practices and emerging technologies. Additionally, I'm fascinated by AI technology and its potential to transform industries. I experiment with AI applications, eager to integrate them into my projects to create innovative solutions that enhance user experiences. </p>
@@ -96,7 +96,7 @@
                 <div class="work-card " for="t-1">
                     <div class="outer-highlight ">
              
-                          <img src="./img/Black & White Yelp App Icon.jpeg" class="w-full ">
+                          <img src="./src/img/Black & White Yelp App Icon.jpeg" class="w-full ">
                         <div class="inner-highlight">
                             <span class="text-2xl font-extrabold mb-3"> YELP CLONE APPLICATION </span>
                             <p class="text-center mb-3">  Developed a Yelp-inspired platform with business search, user
@@ -112,7 +112,7 @@
                 <div class=" work-card " for="t-2">
                     <div class="outer-highlight ">
                <!-- <div class="image-highlight"> <img src="../vecteezy_creative-modern-abstract-ecommerce-logo-design-colorful_6547185-1.jpg" class="w-full "> </div> -->
-                          <img src="./img/e-Commerce logo.jpeg" class="w-full ">
+                          <img src="./src/img/e-Commerce logo.jpeg" class="w-full ">
                         <div class="inner-highlight">
                             <span class="text-2xl font-extrabold mb-3">  ECOMMERS WEB APPLICATION </span>
                             <p class="text-center mb-3"> Built an e-commerce site using Node.js and MongoDB Atlas.
@@ -128,7 +128,7 @@
                 </div>
                 <div class="work-card  " for="t-3">
                     <div class=" outer-highlight ">
-                         <img src="./img/medical shop store trolley capsule.jpeg" class="w-full" > 
+                         <img src="./src/img/medical shop store trolley capsule.jpeg" class="w-full" > 
                         <div class="inner-highlight">
                             <span class="text-2xl font-extrabold mb-3"> Online Medicine Shop using NodeJS </span>
                             <p class="text-center mb-3">
@@ -204,7 +204,7 @@
                         </div>
                 </div>
                 <div class="flex items-end w-3/4 py-2 px-5 border-2 rounded-3xl gap-2 change " style=" background-color: #5B8FB9; color: #b6eada9e; border-color: #5B8FB9;">
-                    <a href="./source/Balaji_Saravanan_Resume.pdf" download  class="text-xl font-extrabold "> Download CV </a>
+                    <a href="./src/source/Balaji_Saravanan_Resume.pdf" download  class="text-xl font-extrabold "> Download CV </a>
                     <span class="material-icons-round cursor-pointer change" style="color: #b6eada9e;" >
                         file_download
                         </span>
@@ -212,11 +212,15 @@
                 <div class="mb-1">
                     <h3 class="text-2xl font-extrabold mb-3 ">Social Profiles</h3>
                     <div class="flex gap-8 cursor-pointer">
-                        <img src="./img/317750_linkedin_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="./img/3225183_app_logo_media_popular_social_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="./img/1298743_github_git_logo_social_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="./img/facebook.png" style="color: aliceblue;" width="20px"> 
-                        <img src="./img/instagram.png" style="color: aliceblue;" width="20px">
+                       <a href="https://www.linkedin.com/in/balajisaravanan8720/" target="_blank"><img src="./src/img/317750_linkedin_icon.png" style="color: aliceblue;" width="20px"></a> 
+                        <a href="https://www.facebook.com/profile.php?id=100008245301275 " target="_blank">
+                            <img src="./src/img/facebook.png " style="color: aliceblue;" width="20px">
+                        </a> 
+                        <a href="https://github.com/Balajisaravana" target="_blank">
+                            <img src="./src/img/1298743_github_git_logo_social_icon.png" style="color: aliceblue;" width="20px">
+                       
+                        </a>
+                     
                     </div>
                 </div>
                </div>
