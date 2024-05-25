@@ -15,12 +15,12 @@
 
 <body>
     <div class="header">
-        <div class="px-20 py-2 max-[600px]:pl-4  max-[600px]:pr-0">
-            <nav class="flex fixed items-center w-full justify-between  ">
+        <div class="sub-header">
+            <nav class=" ">
                 <h1 class="font-sixty font-normal text-5xl  highlight-lower w-2/5 max-[600px]:w-1/3">BS</h1>
-                <ul class="flex link-ul w-[36%] max-[1500px]:w-fit max-[410px]:h-[120vh] ">
-                    <li class="m-1 px-5 "><a href="#aboutme" class="link"> Work</a></li>
-                    <li class="m-1 px-5 "><a href="#Work" class="link">Skill </a> </li>
+                <ul class="flex link-ul max-[410px]:h-[120vh] ">
+                    <li class="m-1 px-5 "><a href="#aboutme" class="link"> About Me</a></li>
+                    <li class="m-1 px-5 "><a href="#Work" class="link">Work </a> </li>
                     <li class="m-1 px-5 max-[900px]:w-[100%]"><a href="#experience" class="link"> Experience</a> </li>
                     <li class="m-1 px-5"><a href="#Contact" class="link">Contact </a> </li>
                     <li onclick="closeChange()" >
@@ -47,50 +47,44 @@
                     <h1 class="text-6xl font-bold">Hi , I'm <span class="p-5 highlight"> Balaji Saravanan</span> <br> Front-End Developer </h1>
                 </div>
                 <div class="basis-1/2 flex justify-evenly max-[900px]:mt-8">
-                    <img src="../backgroundimg.png" style="width: 40%; background: radial-gradient(#301E67, transparent); border-radius: 100%;">
+                    <img src="./img/backgroundimg.png" style="width: 40%; background: radial-gradient(#301E67, transparent); border-radius: 100%;">
                 </div>
             </div>
            
         </div>
     </div>
     <!-- // About ME -->
-    <div class="px-20 max-[600px]:pl-4 max-[600px]:pr-0" style="margin-top: 5%; margin-bottom: 5%;" id="aboutme">
+    <div class="sub-header" style="margin-top: 5%; margin-bottom: 5%;" id="aboutme">
         <div class="flex justify-start items-start about-me">
-            <div class="basis-2/6 max-[1150px]:mt-[13rem] "><img src="../backgroundimg5.png.jpg" class="w-5/6 rounded-lg opacity-90 max-[1150px]:w-[56%] " >  </div>
-            <div  class="basis-4/6 font-poppins"> 
+            <div class="basis-2/6 profile-img "><img src="./img/backgroundimg5.png.jpg" class="w-5/6 rounded-lg opacity-90 max-[1150px]:w-[56%] " >  </div>
+            <div  class="basis-4/6 font-poppins text-section"> 
                 <h1 class="text-5xl font-bold highlight-lower"> ABOUT ME</h1>
-                <p class="text-justify leading-7 w-5/6 my-3 font-light text-lg max-[1400px]:text-base" >Hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate temporibus, cupiditate dolores rerum consequatur nostrum neque obcaecati velit quia error minus harum id nisi laudantium sed est, ab praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, a dignissimos magnam unde illum consectetur maxime alias dolor consequuntur reprehenderit, maiores corrupti voluptas. Blanditiis, magni corrupti vitae atque non maxime! </p>
+                <p class="text-justify leading-7 w-5/6 my-3 font-light text-lg max-[1400px]:text-base" >Hello! I'm a Software Developer who loves creating user-friendly designs and intuitive interfaces. I work on various software projects, constantly seeking to improve my skills and understanding. I'm particularly focused on learning backend development and system architecture. I enjoy delving into the intricacies of server-side programming, databases, and the principles of scalable and efficient system design. My learning approach involves hands-on experimentation, building real-world projects, and continuously studying best practices and emerging technologies. Additionally, I'm fascinated by AI technology and its potential to transform industries. I experiment with AI applications, eager to integrate them into my projects to create innovative solutions that enhance user experiences. </p>
                 <div class="flex my-3 text-2xl font-normal  items-center">
                     <p class="mr-8 cursor-pointer relative about-link active" onclick="handleChange('skill')">Skill</p>
                     <p class="mr-8 cursor-pointer about-link relative" onclick="handleChange('Education')">Education</p>
-                    <p class="mr-8 cursor-pointer about-link relative" onclick="handleChange('Experience')">Experience</p> 
                 </div>
                 <div class="flex absolute tab-content active" id="skill">
                     <ul class="list-none">
-                        <li class="mt-2 font-light "><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
-                        <li class="mt-2  font-light " ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
-                        <li class="mt-2  font-light "><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                        <li class="mt-2 font-light "><span class="font-extrabold">PROGRAMMING</span><br> Javascript | SQL| HTML 5| CSS | SCSS</li>
+                        <li class="mt-2  font-light " ><span class="font-extrabold">LIBRARIES/FRAMEWORKS</span> <br>React Js | Redux | Recoil | Tailwind| Gatsby | Jest | Express| NodeJs</li>
+                        <li class="mt-2  font-light "><span class="font-extrabold"> TOOLS / PLATFORMS / Data Base</span><br> Contentful | Git | MySql | MongoDB |Postgresql | SOQL | Jira | Bit Bucket</li>
                     </ul>
                 </div>
-                <div class="flex absolute tab-content" id="Experience">
-                    <ul class="list-none">
-                        <li class="mt-2 font-light "><span class="font-extrabold"> Us/UX</span><br> Design Web interface and app interface</li>
-                        <li class="mt-2 font-light" ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
-                        <li class="mt-2 font-light"><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
-                    </ul>
-                </div>
+        
                 <div class="flex absolute tab-content" id="Education">
                     <ul class="list-none">
-                        <li class="mt-2 font-light"><span class="font-extrabold"> Uz/UX</span><br> Design Web interface and app interface</li>
-                        <li class="mt-2 font-light" ><span class="font-extrabold"> UI/UX</span> <br>Design Web interface and app interface</li>
-                        <li class="mt-2 font-light"><span class="font-extrabold"> UI/UX</span><br> Design Web interface and app interface</li>
+                        <li class="mt-2 font-light"><span class="font-extrabold"> St.Joseph College of Engineering (2018 -2022) </span><br> Bachelor of Engineering in
+                            Computer Science<br/> CGPA : 8.1 </li>
+                        <li class="mt-2 font-light" ><span class="font-extrabold"> Sri Sankara Vidyalaya School (2017 - 2018)</span> <br>Computer Scienece HSC <br/> Percentage: 80%</li>
+                        <li class="mt-2 font-light"><span class="font-extrabold"> Zion Matriculation Hr. Sec. School (2015 - 2016 ) </span><br> Degree in SSLC <br/> Percentage: 90% </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- ///Work -->
-    <div class="px-20 max-[600px]:pl-4  max-[600px]:pr-0" style="margin-top: 5%; margin-bottom: 5%;" id="Work">
+    <div class="sub-header" style="margin-top: 5%; margin-bottom: 5%;" id="Work">
         <div class="mb-16"><h1 class="text-5xl font-bold highlight-lower">My Work</h1></div>
 
 
@@ -99,42 +93,47 @@
                 <input type="radio" name="testimonial" id="t-2" checked>
                 <input type="radio" name="testimonial" id="t-3" >
                 <div class="inner-slider">
-                <div class="mt-5 w-1/3 p-10 work-card max-[900px]:left-[15%] max-[600px]:left-0 max-[600px]:w-[100%]  max-[530px]:left-[-30px]" for="t-1">
+                <div class="work-card " for="t-1">
                     <div class="outer-highlight ">
              
-                          <img src="../restorant.jpg" class="w-full ">
+                          <img src="./img/Black & White Yelp App Icon.jpeg" class="w-full ">
                         <div class="inner-highlight">
-                            <span class="text-2xl font-extrabold mb-3"> Mondelez</span>
-                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
-                            <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200 " style="color: 5B8FB9; background-color: transparent;">
+                            <span class="text-2xl font-extrabold mb-3"> YELP CLONE APPLICATION </span>
+                            <p class="text-center mb-3">  Developed a Yelp-inspired platform with business search, user
+                                reviews, and ratings to boost local business exposure and
+                                engage users effectively.</p>
+                            <a href="https://github.com/Balajisaravana/Yelp_Clone_PERN"> <span class="material-icons-round img-link  rounded-xl bg-slate-200 " style="color: 5B8FB9; background-color: transparent;">
                                 arrow_outward
                                 </span></a> 
                         </div>
                        
                       </div>
                 </div>
-                <div class="mt-5 w-1/3 p-10 work-card  max-[900px]:left-[15%] max-[600px]:left-0 max-[600px]:w-[100%]  max-[530px]:left-[-30px]" for="t-2">
+                <div class=" work-card " for="t-2">
                     <div class="outer-highlight ">
-             
-                          <img src="../depositphotos_60600635-stock-photo-closeup-of-a-muscular-young.jpg" class="w-full ">
+               <!-- <div class="image-highlight"> <img src="../vecteezy_creative-modern-abstract-ecommerce-logo-design-colorful_6547185-1.jpg" class="w-full "> </div> -->
+                          <img src="./img/e-Commerce logo.jpeg" class="w-full ">
                         <div class="inner-highlight">
-                            <span class="text-2xl font-extrabold mb-3"> Astra</span>
-                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
-                           <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
+                            <span class="text-2xl font-extrabold mb-3">  ECOMMERS WEB APPLICATION </span>
+                            <p class="text-center mb-3"> Built an e-commerce site using Node.js and MongoDB Atlas.
+                                Features include category-wise product browsing, admin
+                                controls for product management a Complete CRUD
+                                Application </p>
+                           <a href="https://github.com/Balajisaravana/Ecommerce_MERN"> <span class="material-icons-round img-link  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
                             arrow_outward
                             </span></a> 
                         </div>
                        
                       </div>
                 </div>
-                <div class="mt-5 w-1/3 p-10 work-card  max-[900px]:left-[15%] max-[600px]:left-0 max-[600px]:w-[100%] max-[530px]:left-[-30px]" for="t-3">
+                <div class="work-card  " for="t-3">
                     <div class=" outer-highlight ">
-             
-                          <img src="../AI-terms-scaled.jpg" class="w-full ">
+                         <img src="./img/medical shop store trolley capsule.jpeg" class="w-full" > 
                         <div class="inner-highlight">
-                            <span class="text-2xl font-extrabold mb-3"> AI</span>
-                            <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam ea quidem illum inventore unde odio? Consequatur iusto cumque incidunt. Maiores, praesentium iusto voluptas ipsum repellendus ut fugiat numquam impedit!</p>
-                            <a href="#"> <span class="material-icons-round  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
+                            <span class="text-2xl font-extrabold mb-3"> Online Medicine Shop using NodeJS </span>
+                            <p class="text-center mb-3">
+                                Our Online Medicine Shop offers registration for ADMIN and CUSTOMER users, secure logins, profile management, administrative controls for medicine information, categorized browsing, detailed medicine data, cart management, streamlined ordering with invoice generation, payment options, and order management by the ADMIN.</p>
+                            <a href="https://github.com/Balajisaravana/final-medicien-project"> <span class="material-icons-round img-link  rounded-xl bg-slate-200" style="color: 5B8FB9; background-color: transparent;">
                                 arrow_outward
                                 </span></a> 
                         </div>
@@ -151,47 +150,47 @@
             </div>
     </div>
     <!-- // Experience -->
-    <div class="px-20 max-[600px]:pl-4  max-[600px]:pr-0" style="margin-top: 5%; margin-bottom: 5%;" id="experience">
+    <div class="sub-header" style="margin-top: 5%; margin-bottom: 5%;" id="experience">
         <div class=" flex flex-col ">
             <div class="font-poppins mb-16">
                 <h1 class="text-5xl font-bold highlight-lower"> Experience</h1>
             </div>
-            <div class="grid-card max-[720px]:max-w-[500px]">
-                <div class="flex flex-col gap-3">
-                    <span class="text-3xl font-extrabold"> Mondelez</span>
-                    <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
-                    <span class="text-2xl font-normal my-1" >Technology</span>
-                    <p>React</p>
+            <div class="grid-card ">
+                <div class="flex flex-col experience-card ">
+                    <span class=" font-extrabold experience-header "> MINDTREE </span>
+                    <p class="experience-font">I led a comprehensive development project utilizing the MERN stack, honing skills in Express, React.js, and Node.js. Developed a Pharma Commerce project featuring admin and user purchase portals, along with corresponding APIs managed using JWT tokens in Express. Implemented the database using Mongoose and conducted functional testing using React Testing Library to ensure robustness.</p>
+                    <span class=" experience-side-header" > Technology </span>
+                    <p class="experience-font"> React | Express | Node JS | MongoDB | Javascript</p>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <span class="text-3xl font-extrabold"> Mondelez</span>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
-                    <span class="text-2xl font-normal my-1">Technology</span>
-                    <p>React</p>
+                <div class="flex flex-col experience-card">
+                    <span class=" font-extrabold  experience-header">  MONDELEZ INTERNATIONAL </span>
+                    <p class="experience-font "> I contributed to modular development with reusable components, integrating Contentful data for efficient content management. Rigorous React testing and SonarCloud checks bolstered software quality. GitHub repository management and error resolution upheld high development standards. Strategic SEO optimizations notably enhanced search engine visibility. Technologies utilized include JavaScript, React, Redux, React-testing, Gatsby, with Contentful as the CMS platform, facilitating seamless collaboration with the backend team and expediting feature deployment.</p>
+                    <span class="  experience-side-header">Technology</span>
+                    <p class="experience-font">React | Redux | GraphQL | GatsbyJs | Contentful </p>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <span class="text-3xl font-extrabold"> Mondelez</span>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero, eaque molestias aliquid incidunt fuga consectetur. Error non repudiandae dolorum. Libero vero quas facilis veritatis eius repellat, doloremque beatae!</p>
-                    <span class="text-2xl font-normal my-1">Technology</span>
-                    <p>React</p>
+                <div class="flex flex-col experience-card">
+                    <span class="font-extrabold  experience-header">  ASTRA ZENECA </span>
+                    <p class="experience-font">I led the React integration into Salesforce Veeva CRM, focusing on tablet and mobile users for cross-device optimization. Employing lazy loading techniques notably enhanced page load times. I designed a customized dashboard to meet specific business requirements and oversaw the migration of a legacy web app to modern standards, enhancing functionality and user experience. Utilizing Recoil, React, SOQL, Tailwind, Prime React, and JavaScript, with Salesforce as the database, ensured smooth execution, prioritizing seamless collaboration and improved efficiency across platforms. </p>
+                    <span class="experience-side-header">Technology</span>
+                    <p class="experience-font">React | Recoil | Tailwind Css | SOQL | Scss</p>
                 </div>
             </div>
         </div>
     </div>
    
     <!-- /// Contact ME  -->
-    <div class="px-20 max-[600px]:pl-4 max-[600px]:pr-0 " style="margin-top: 5%;" id="Contact">
+    <div class="sub-header" style="margin-top: 5%;" id="Contact">
         <div class="mb-16" ><h1 class="text-5xl font-bold highlight-lower">Contact With Me</h1></div>
         <div class=" gap-5 p-5  items-center justify-items-start grid-content ">
-            <div class="contact m-3 p-8 flex flex-col items-center  rounded-3xl min-h-96 gap-8 max-[600px]:w-[360px]  max-[600px]:p-[20px] max-[347px]:ml-[40px] " style="background-color: #301e6742;"> 
+            <div class="contact max-[600px]:w-[360px]  max-[600px]:p-[20px] max-[347px]:ml-[40px]" style="background-color: #301e6742;"> 
                 <h2 class="text-3xl font-extrabold mb-3 text-center">Contact Information</h2>
-               <div class=" flex flex-col gap-8">
+               <div class=" flex flex-col gap-9">
                 <div class="flex items-center gap-12">
                     <span class="material-icons-round border-2 rounded-full p-2" style="color: #5B8FB9; border-color: #5B8FB9;">
                         drafts
                         </span>
                         <div class="border-l-2 px-2">
-                            <h3 class="text-xl font-extrabold  ">Email</h3>
+                            <h3 class="text-xl font-extrabold  "> Email</h3>
                             <p>balajibalab1@gmail.com</p>
                         </div>
                 </div>
@@ -213,18 +212,18 @@
                 <div class="mb-1">
                     <h3 class="text-2xl font-extrabold mb-3 ">Social Profiles</h3>
                     <div class="flex gap-8 cursor-pointer">
-                        <img src="../317750_linkedin_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="../3225183_app_logo_media_popular_social_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="../1298743_github_git_logo_social_icon.png" style="color: aliceblue;" width="20px">
-                        <img src="../facebook.png" style="color: aliceblue;" width="20px"> 
-                        <img src="../instagram.png" style="color: aliceblue;" width="20px">
+                        <img src="./img/317750_linkedin_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="./img/3225183_app_logo_media_popular_social_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="./img/1298743_github_git_logo_social_icon.png" style="color: aliceblue;" width="20px">
+                        <img src="./img/facebook.png" style="color: aliceblue;" width="20px"> 
+                        <img src="./img/instagram.png" style="color: aliceblue;" width="20px">
                     </div>
                 </div>
                </div>
             </div>
-            <div class="contact m-3 p-8  rounded-3xl min-h-96 max-[600px]:w-[360px] max-[347px]:ml-[40px]" style="background-color: #301e6742;">
-                <h2 class="text-3xl font-extrabold mb-3 text-center "> Send Me Message</h2>
-                <div class="" >
+            <div class="contact  max-[600px]:w-[360px] max-[347px]:ml-[40px]" style="background-color: #301e6742;">
+                <h2 class="text-3xl font-extrabold mb-2 text-center "> Send Me Message</h2>
+                <div class="w-full p-1" >
                     <form class="flex flex-col  px-5 items-center gap-5 mt-5 " name="submit-to-google-sheet">
                         <input name="Name" type="text" placeholder="Your Name" required style="width: 80%; border-radius: 5px; padding: 6px; background-color: #5b8fb95e;" >
                         <input name="Email" type="email" placeholder="Your Email" required style="width: 80%; border-radius: 5px; padding: 6px;background-color: #5b8fb95e;">
